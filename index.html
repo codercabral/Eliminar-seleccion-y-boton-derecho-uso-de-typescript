@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>No permitir la seleccion de texto</h1>
+    <h2>user-select: none</h2>
+    <p class="user1">con user-select: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos soluta distinctio itaque adipisci aspernatur deserunt amet rerum, sunt ullam cum officia harum id. Sint debitis excepturi cumque ipsum corporis inventore?</p>
+    <p>sin user-select: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos soluta distinctio itaque adipisci aspernatur deserunt amet rerum, sunt ullam cum officia harum id. Sint debitis excepturi cumque ipsum corporis inventore?</p>
+    <script type="text/javascript">
+        // Función para desactivar el menú contextual del botón derecho
+        function deshabilitarBotonDerecho(event) {
+            event.preventDefault();
+        }
+    
+        // Agregar el evento de escucha al cargar el documento
+        document.addEventListener('contextmenu', deshabilitarBotonDerecho);
+    </script>
+    <script src="script.js"></script>
+    <script src="script2.js"></script>
+
+</body>
+</html>
